@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechStore — Home</title>
+  <meta name="description" content="TechStore - modern demo e-commerce site using FakeStoreAPI">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <div class="nav-left">
+      <h1 class="logo">TechStore</h1>
+    </div>
+    <div class="nav-right">
+      <input id="search" aria-label="Search products" placeholder="Search products..." />
+      <a class="cart-link" href="cart.html" aria-label="View cart">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="controls" aria-label="Filters and sorting">
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="all">All categories</option>
+        
+      </select>
+
+      <select id="price-filter" aria-label="Filter by price">
+        <option value="all">All prices</option>
+        <option value="low">Under $100</option>
+        <option value="mid">$100 - $500</option>
+        <option value="high">Above $500</option>
+      </select>
+
+      <select id="sort-select" aria-label="Sort products">
+        <option value="default">Sort: Featured</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="rating-desc">Top Rated</option>
+      </select>
+    </section>
+
+    <h2>Featured Products</h2>
+
+    <div id="product-list" class="grid" aria-live="polite"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 TechStore — Demo e-commerce frontend</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
