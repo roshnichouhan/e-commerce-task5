@@ -48,5 +48,5 @@ Version Control: Git & GitHub
 
 ⚡ Installation & Setup
 
-Clone the repository:
+Clone the repository: https://github.com/roshnichouhan/e-commerce-task5.git
 
